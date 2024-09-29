@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Template
+title: Submerge Blog
 subtitle: ''
 description: ''
 keywords:
-author: JiJi
+author: Submerge 
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://sadaswda12.github.io
+url: https://041101.xyz
 permalink: :title/
 permalink_defaults:
 pretty_urls:
