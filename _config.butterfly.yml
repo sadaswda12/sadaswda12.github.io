@@ -65,13 +65,13 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: img/mainpage.jpg
+index_img: https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img:https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img:https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
