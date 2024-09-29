@@ -68,10 +68,10 @@ default_top_img:
 index_img: https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # The banner image of archive page
-archive_img:https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
+archive_img: https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # Note: tag page, not tags page
-tag_img:https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
+tag_img: https://imgb15.photophoto.cn/20201226/yangtupian-40296406_3.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
