@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Submerge Blog</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-09-30T04:44:07.611Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Submerge</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2024/09/30/hello-template/"/>
+    <id>http://example.com/2024/09/30/hello-template/</id>
+    <published>2024-09-30T04:44:07.611Z</published>
+    <updated>2024-09-30T04:44:07.611Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Submerge-Blog&quot;&gt;&lt;a href=&quot;#Submerge-Blog&quot; class=&quot;headerlink&quot; title=&quot;Submerge Blog&quot;&gt;&lt;/a&gt;Submerge Blog&lt;/h1&gt;&lt;p&gt;本站是 Submerge</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
