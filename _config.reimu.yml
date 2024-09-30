@@ -22,6 +22,9 @@ favicon: "/images/favicon.ico" # themes/reimu/source/images/favicon.ico
 # favicon: "https://example.com"
 avatar: "avatar.webp" # source/_data/avatar/avatar.webp
 
+friend_link:
+  url: https://www.brocademaple.life/
+  img: https://www.brocademaple.life/images/ayer.png
 
 # Content
 excerpt_link: Read More
