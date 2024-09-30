@@ -116,6 +116,7 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
+  
 friend_link:
   url: https://www.brocademaple.life/
   img: https://www.brocademaple.life/images/ayer.png
