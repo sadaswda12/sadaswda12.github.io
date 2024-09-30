@@ -21,4 +21,4 @@ comments: true
 ~~~
 
 ## 小伙伴们
-{% friendsLink friends/_data.yml %}
+{% friendsLink friend/_data.yml %}
