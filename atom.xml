@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-09-30T08:30:42.737Z</updated>
+  <updated>2024-09-30T08:41:12.895Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>STM32 教程</title>
-    <link href="http://example.com/2024/09/30/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/"/>
-    <id>http://example.com/2024/09/30/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/</id>
-    <published>2024-09-30T08:30:42.737Z</published>
-    <updated>2024-09-30T08:30:42.737Z</updated>
+    <title></title>
+    <link href="http://example.com/2024/09/30/hello-template/"/>
+    <id>http://example.com/2024/09/30/hello-template/</id>
+    <published>2024-09-30T08:41:12.895Z</published>
+    <updated>2024-09-30T08:41:12.895Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;时钟树的简单介绍以及GPIO的说明&quot;&gt;&lt;a href=&quot;#时钟树的简单介绍以及GPIO的说明&quot; class=&quot;headerlink&quot; title=&quot;时钟树的简单介绍以及GPIO的说明&quot;&gt;&lt;/a&gt;时钟树的简单介绍以及GPIO的说明&lt;/h1&gt;&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;Submerge-Blog&quot;&gt;&lt;a href=&quot;#Submerge-Blog&quot; class=&quot;headerlink&quot; title=&quot;Submerge Blog&quot;&gt;&lt;/a&gt;Submerge Blog&lt;/h1&gt;&lt;p&gt;本站是 Submerge</summary>
         
       
     
@@ -38,18 +38,19 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2024/09/30/hello-template/"/>
-    <id>http://example.com/2024/09/30/hello-template/</id>
-    <published>2024-09-30T08:30:42.736Z</published>
-    <updated>2024-09-30T08:30:42.737Z</updated>
+    <title>STM32 教程</title>
+    <link href="http://example.com/2024/09/30/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2024/09/30/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/</id>
+    <published>2024-09-30T08:41:12.895Z</published>
+    <updated>2024-09-30T08:41:12.895Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Submerge-Blog&quot;&gt;&lt;a href=&quot;#Submerge-Blog&quot; class=&quot;headerlink&quot; title=&quot;Submerge Blog&quot;&gt;&lt;/a&gt;Submerge Blog&lt;/h1&gt;&lt;p&gt;本站是 Submerge</summary>
+    <summary type="html">&lt;p&gt;点亮一个灯&lt;br&gt;在点亮一个灯之前，我们首先简单了解一下&lt;/p&gt;
+</summary>
         
       
     
