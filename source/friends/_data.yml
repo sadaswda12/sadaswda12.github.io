@@ -1,6 +1,4 @@
 - name: 鸽鸽的博客
-  link: https://www.brocademaple.life/
-  avatar: https://www.brocademaple.life/images/ayer.png
-
-
-
+  url: https://www.brocademaple.life/
+  desc: 马锦枫的博客
+  image: https://www.brocademaple.life/images/ayer.png
