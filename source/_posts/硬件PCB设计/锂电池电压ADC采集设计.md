@@ -8,7 +8,7 @@ p
 
 本例子采用航模电池2s电池为7.4V，分压最大为3.22V，符合单片机的3.3V电压。
 
-![image-20241003231954934](C:\Users\MHB\AppData\Roaming\Typora\typora-user-images\image-20241003231954934.png)
+![image_ADC](/images/锂电池电压ADC采集设计_img/image_ADC.png)
 
 在使用时候，在设备关机后，将引脚拉高，利用PMOS将电路断开，有效避免了分压电阻耗电。
 
