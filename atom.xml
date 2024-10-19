@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-09T02:44:09.648Z</updated>
+  <updated>2024-10-19T03:05:42.645Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,71 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Sbumerge Blog</title>
+    <link href="http://example.com/2024/10/19/hello-template/"/>
+    <id>http://example.com/2024/10/19/hello-template/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Submerge-Blog&quot;&gt;&lt;a href=&quot;#Submerge-Blog&quot; class=&quot;headerlink&quot; title=&quot;Submerge Blog&quot;&gt;&lt;/a&gt;Submerge Blog&lt;/h1&gt;&lt;p&gt;本站是 Submerge</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QT实现串口助手文档</title>
+    <link href="http://example.com/2024/10/19/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/"/>
+    <id>http://example.com/2024/10/19/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>点亮一个LED灯</title>
+    <link href="http://example.com/2024/10/19/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/"/>
+    <id>http://example.com/2024/10/19/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>遥控ROS小车实现文档</title>
+    <link href="http://example.com/2024/10/19/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/"/>
+    <id>http://example.com/2024/10/19/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>FOC控制</title>
-    <link href="http://example.com/2024/10/09/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/"/>
-    <id>http://example.com/2024/10/09/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/</id>
-    <published>2024-10-09T02:44:09.648Z</published>
-    <updated>2024-10-09T02:44:09.648Z</updated>
+    <link href="http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/"/>
+    <id>http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
     
     
       
@@ -40,10 +100,10 @@
   
   <entry>
     <title>锂电池电压ADC采集设计</title>
-    <link href="http://example.com/2024/10/09/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/"/>
-    <id>http://example.com/2024/10/09/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/</id>
-    <published>2024-10-09T02:44:09.648Z</published>
-    <updated>2024-10-09T02:44:09.648Z</updated>
+    <link href="http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
     
     
       
@@ -62,11 +122,24 @@
   </entry>
   
   <entry>
+    <title>降压芯片选型与设计电路</title>
+    <link href="http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%99%8D%E5%8E%8B%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%94%B5%E8%B7%AF/"/>
+    <id>http://example.com/2024/10/19/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%99%8D%E5%8E%8B%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%94%B5%E8%B7%AF/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>考研西电通信工程学院！</title>
-    <link href="http://example.com/2024/10/09/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94/"/>
-    <id>http://example.com/2024/10/09/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94/</id>
-    <published>2024-10-09T02:44:09.648Z</published>
-    <updated>2024-10-09T02:44:09.648Z</updated>
+    <link href="http://example.com/2024/10/19/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94/"/>
+    <id>http://example.com/2024/10/19/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
     
     
       
@@ -84,70 +157,10 @@
   
   <entry>
     <title>阅读笔记(美文美句类)</title>
-    <link href="http://example.com/2024/10/09/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2024/10/09/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2024-10-09T02:44:09.648Z</published>
-    <updated>2024-10-09T02:44:09.648Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Sbumerge Blog</title>
-    <link href="http://example.com/2024/10/09/hello-template/"/>
-    <id>http://example.com/2024/10/09/hello-template/</id>
-    <published>2024-10-09T02:44:09.647Z</published>
-    <updated>2024-10-09T02:44:09.647Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Submerge-Blog&quot;&gt;&lt;a href=&quot;#Submerge-Blog&quot; class=&quot;headerlink&quot; title=&quot;Submerge Blog&quot;&gt;&lt;/a&gt;Submerge Blog&lt;/h1&gt;&lt;p&gt;本站是 Submerge</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>QT实现串口助手文档</title>
-    <link href="http://example.com/2024/10/09/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/"/>
-    <id>http://example.com/2024/10/09/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/</id>
-    <published>2024-10-09T02:44:09.647Z</published>
-    <updated>2024-10-09T02:44:09.647Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>遥控ROS小车实现文档</title>
-    <link href="http://example.com/2024/10/09/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/"/>
-    <id>http://example.com/2024/10/09/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/</id>
-    <published>2024-10-09T02:44:09.647Z</published>
-    <updated>2024-10-09T02:44:09.647Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>点亮一个LED灯</title>
-    <link href="http://example.com/2024/10/09/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/"/>
-    <id>http://example.com/2024/10/09/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/</id>
-    <published>2024-10-09T02:44:09.647Z</published>
-    <updated>2024-10-09T02:44:09.647Z</updated>
+    <link href="http://example.com/2024/10/19/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2024/10/19/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2024-10-19T03:05:42.645Z</published>
+    <updated>2024-10-19T03:05:42.645Z</updated>
     
     
     
