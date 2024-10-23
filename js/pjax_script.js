@@ -156,14 +156,22 @@ if (document.documentElement.scrollTop < 10) {
   sidebarTop.style.opacity = 0;
 }
 
-window.off("scroll").on("scroll", () => {
+var __sidebarTopScrollHandler;
+
+if (__sidebarTopScrollHandler) {
+  window.off("scroll", __sidebarTopScrollHandler);
+}
+
+__sidebarTopScrollHandler = () => {
   const sidebarTop = _$(".sidebar-top");
   if (document.documentElement.scrollTop < 10) {
     sidebarTop.style.opacity = 0;
   } else {
     sidebarTop.style.opacity = 1;
   }
-});
+};
+
+window.on("scroll", __sidebarTopScrollHandler);
 
 // toc
 _$$(".toc a").forEach((element) => {
@@ -185,6 +193,7 @@ _$$(".sidebar-menu-link-dummy").forEach((element) => {
 });
 
 function tocInit() {
+  if (!_$("#sidebar")) return;
   const navItems =
     getComputedStyle(_$("#sidebar")).display === "block"
       ? _$$("#sidebar .sidebar-toc-wrapper li")

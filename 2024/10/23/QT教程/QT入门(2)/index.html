@@ -14,7 +14,7 @@
   
   
   <title>
-    Archives: 2024 |
+    QT入门(2) --- 信号与槽机制 |
     
     Submerge Blog
   </title>
@@ -29,13 +29,15 @@
 
   
   
-    <meta name="description" content="Submerge的个人学习博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Submerge Blog">
-<meta property="og:url" content="http://example.com/archives/2024/index.html">
+    <meta name="description" content="1.摘要  信号槽是 Qt 框架引以为豪的机制之一。所谓信号槽，实际就是观察者模式。当某个事件发生之后，比如，按钮检测到自己被点击了一下，它就会发出一个信号 （signal）。这种发出是没有目的的，类似广播。如果有对象对这个信号感兴趣， 它就会使用连接（connect）函数，意思是，将想要处理的信号和自己的一个函 数（称为槽（slot））绑定来处理这个信号。也就是说，当信号发出时，被连接 的槽函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QT入门(2) --- 信号与槽机制">
+<meta property="og:url" content="http://example.com/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(2)/index.html">
 <meta property="og:site_name" content="Submerge Blog">
-<meta property="og:description" content="Submerge的个人学习博客">
+<meta property="og:description" content="1.摘要  信号槽是 Qt 框架引以为豪的机制之一。所谓信号槽，实际就是观察者模式。当某个事件发生之后，比如，按钮检测到自己被点击了一下，它就会发出一个信号 （signal）。这种发出是没有目的的，类似广播。如果有对象对这个信号感兴趣， 它就会使用连接（connect）函数，意思是，将想要处理的信号和自己的一个函 数（称为槽（slot））绑定来处理这个信号。也就是说，当信号发出时，被连接 的槽函数">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-10-23T05:29:23.334Z">
+<meta property="article:modified_time" content="2024-10-23T05:29:23.334Z">
 <meta property="article:author" content="Submerge">
 <meta name="twitter:card" content="summary">
   
@@ -148,7 +150,7 @@
 <header id="header">
   
     
-      <img fetchpriority="high" src="/images/banner.webp" alt="">
+      <img fetchpriority="high" src="/images/banner.webp" alt="QT入门(2) --- 信号与槽机制">
     
   
   <div id="header-outer">
@@ -157,7 +159,7 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">Archives</h1>
+            <h1 data-aos="slide-up">QT入门(2) --- 信号与槽机制</h1>
           </a>
         
       
@@ -173,204 +175,113 @@
 
         <div id="content">
           
-          <section id="main">
-<div class="archives-outer-wrap" data-aos="fade-up">
-  <div class="tag-wrap">
+          <section id="main"><article id="post-QT教程/QT入门(2)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(2)/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">2024-10-23</time>
+    <time style="display: none;" id="post-update-time">2024-10-23</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
     
-  </div>
-  <div class="category-wrap">
-    
-  </div>
-  
-  
-    
-    
+
+    <div class="e-content article-entry" itemprop="articleBody">
       
       
-      <section class="archives-wrap" data-aos="fade-up">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <ul>
-          
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/hello-template/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
+        <h1 id="1-摘要"><a href="#1-摘要" class="headerlink" title="1.摘要"></a>1.摘要</h1><p>  信号槽是 Qt 框架引以为豪的机制之一。所谓信号槽，实际就是观察者模式。当某个事件发生之后，比如，按钮检测到自己被点击了一下，它就会发出一个信号 （signal）。这种发出是没有目的的，类似广播。如果有对象对这个信号感兴趣， 它就会使用连接（connect）函数，意思是，将想要处理的信号和自己的一个函 数（称为槽（slot））绑定来处理这个信号。也就是说，当信号发出时，被连接 的槽函数会自动被回调。这就类似观察者模式：当发生了感兴趣的事件，某一个 操作就会被自动触发。（这里提一句，Qt 的信号槽使用了额外的处理来实现，并不是 GoF 经典的观察者模式的实现方式。）</p>
+<h1 id="2-简单的分析使用"><a href="#2-简单的分析使用" class="headerlink" title="2.简单的分析使用"></a>2.简单的分析使用</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">connect</span>(发出信号的对象，发出的信号，接收信号的对象，接收到信号之后需要调用的函数（槽函数））</span><br><span class="line"></span><br><span class="line"><span class="built_in">connect</span>(sender, <span class="built_in">signal</span>(信号）, receiver, slot（槽）);</span><br></pre></td></tr></table></figure>
+
+<p>  <strong>信号槽要求信号和槽的参数一致，所谓一致，是参数类型一致。如果不一致</strong>，允许的情况是，槽函数的参数可以比信号的少，即便如此，槽函数存在的那些参数的顺序也必须和信号的前面几个一致起来。（可以忽略部分传来的信号参数），但是不能说信号根本没有这个数据，你就要在槽函数中使用（就是槽函数的参数比信号的多，这是不允许的）</p>
+<ul>
+<li>实例演示(电机按钮关闭窗口)</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">QPushButton *close = <span class="keyword">new</span> <span class="built_in">QPushButton</span>(<span class="keyword">this</span>);</span><br><span class="line">   <span class="comment">//设置文字</span></span><br><span class="line">   close-&gt;<span class="built_in">setText</span>(<span class="string">&quot;close&quot;</span>);</span><br><span class="line">   <span class="comment">//设置按钮位置</span></span><br><span class="line">   close-&gt;<span class="built_in">move</span>(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">   </span><br><span class="line">   <span class="comment">//用信号和槽去实现点击按钮关闭窗口</span></span><br><span class="line"><span class="built_in">connect</span>(close,&amp;QPushButton::clicked,<span class="keyword">this</span>,&amp;QWidget::close);</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-1自定义信号与槽"><a href="#2-1自定义信号与槽" class="headerlink" title="2.1自定义信号与槽"></a>2.1自定义信号与槽</h2><p>  使用 connect()可以让我们连接系统提供的信号和槽。但是，Qt 的信号槽机制 并不仅仅是使用系统提供的那部分，还会允许我们自己设计自己的信号和槽。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
   </div>
   
     
-      <a class="archive-article-title" href="/2024/10/23/hello-template/">Sbumerge Blog</a>
+  <nav id="article-nav" data-aos="fade-up">
     
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(1)/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(1)/">QT入门教程 --- 基本框架</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(2)/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(2)/">QT入门(2) --- 信号与槽机制</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E8%BF%9E%E6%8E%A5MYSQL/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E8%BF%9E%E6%8E%A5MYSQL/">QT连接MYSQL</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/QT%E8%AE%BE%E8%AE%A1/%E4%B8%B2%E5%8F%A3%E5%8A%A9%E6%89%8B%E6%96%87%E6%A1%A3/">QT实现串口助手文档</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/stm32%E6%95%99%E7%A8%8B/stm32%E6%95%99%E7%A8%8B/">点亮一个LED灯</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/stm32%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/ROS%E5%B0%8F%E8%BD%A6%E6%96%87%E6%A1%A3/">遥控ROS小车实现文档</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/FOC/">FOC控制</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%94%82%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8BADC%E9%87%87%E9%9B%86%E8%AE%BE%E8%AE%A1/">锂电池电压ADC采集设计</a>
-    
-  
-</li>
-
-          
-    
-    
-          <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <a href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%99%8D%E5%8E%8B%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%94%B5%E8%B7%AF/">
-      <time class="dt-published" datetime="2024-10-23T05:29:23.334Z" itemprop="datePublished">10-23</time>
-    </a>
-  </div>
-  
-    
-      <a class="archive-article-title" href="/2024/10/23/%E7%A1%AC%E4%BB%B6PCB%E8%AE%BE%E8%AE%A1/%E9%99%8D%E5%8E%8B%E8%8A%AF%E7%89%87%E9%80%89%E5%9E%8B%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%94%B5%E8%B7%AF/">降压芯片选型与设计电路</a>
-    
-  
-</li>
-
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
           
           
-        </ul>
-      </section>
-  
-  </div>
-
-
-  <nav id="page-nav" data-aos="fade-up">
+            <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="QT入门教程 --- 基本框架" class="lazyload">
+          
+        
+        <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E5%85%A5%E9%97%A8(1)/"></a>
+        <div class="article-nav-caption">Newer</div>
+        <h3 class="article-nav-title">
+          
+            QT入门教程 --- 基本框架
+          
+        </h3>
+      </div>
     
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2024/page/2/">2</a><a class="extend next" rel="next" href="/archives/2024/page/2/">Next &raquo;</a>
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="https://file.moyublog.com/d/file/2021-02-22/44de8f35227876f2661643718b7510fc.jpg" data-sizes="auto" alt="QT连接MYSQL" class="lazyload">
+        
+      
+      <a href="/2024/10/23/QT%E6%95%99%E7%A8%8B/QT%E8%BF%9E%E6%8E%A5MYSQL/"></a>
+      <div class="article-nav-caption">Older</div>
+      <h3 class="article-nav-title">
+        
+          QT连接MYSQL
+        
+      </h3>
+    </div>
+    
   </nav>
+
+
+  
+</article>
+
+
+
+
 
 
 </section>
           
             <aside id="sidebar">
-  <div class="sidebar-wrapper ">
+  <div class="sidebar-wrapper wrap-sticky">
     <div class="sidebar-wrap" data-aos="fade-up">
       
-        <div class="sidebar-author">
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">1.摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E7%AE%80%E5%8D%95%E7%9A%84%E5%88%86%E6%9E%90%E4%BD%BF%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">2.简单的分析使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%A1%E5%8F%B7%E4%B8%8E%E6%A7%BD"><span class="toc-number">2.1.</span> <span class="toc-text">2.1自定义信号与槽</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Submerge" class="lazyload">
   <div class="sidebar-author-name">Submerge</div>
   <div class="sidebar-description">Submerge的个人学习博客</div>
@@ -419,8 +330,13 @@
     </div>
   
 </div>
-
+</div>
       
+      
+        <div class="sidebar-btn-wrapper" style="position:static">
+          <div class="sidebar-toc-btn current"></div>
+          <div class="sidebar-common-btn"></div>
+        </div>
       
     </div>
   </div>
@@ -478,7 +394,16 @@
       <nav id="mobile-nav">
   <div class="sidebar-wrap">
     
-      <div class="sidebar-author">
+      <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E6%91%98%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">1.摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E7%AE%80%E5%8D%95%E7%9A%84%E5%88%86%E6%9E%90%E4%BD%BF%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">2.简单的分析使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%A1%E5%8F%B7%E4%B8%8E%E6%A7%BD"><span class="toc-number">2.1.</span> <span class="toc-text">2.1自定义信号与槽</span></a></li></ol></li></ol>
+      
+  </div>
+</div>
+</div>
+      <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Submerge" class="lazyload">
   <div class="sidebar-author-name">Submerge</div>
   <div class="sidebar-description">Submerge的个人学习博客</div>
@@ -527,9 +452,14 @@
     </div>
   
 </div>
-
+</div>
     
   </div>
+  
+    <div class="sidebar-btn-wrapper">
+      <div class="sidebar-toc-btn current"></div>
+      <div class="sidebar-common-btn"></div>
+    </div>
   
 </nav>
 
