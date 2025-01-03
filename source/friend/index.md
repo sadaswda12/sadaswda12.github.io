@@ -4,7 +4,7 @@ comments: true
 ---
 
 ## 本站信息
-- 站名： Submerge Blog
+- 站名： Mortal
 - 站长： Submerge
 - 地址： https://041101.xyz
 
